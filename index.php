@@ -36,8 +36,9 @@ L.tileLayer(
 	}).addTo( map );
 	var latlngs = [
  <?php
+	include './config.php';
 	$track = fopen('./data/point.history', 'r');
-	if ($track) {
+	if ($track and $ShowOnlyLastPos == false) {
 		while (($line = fgets($track)) !== false) {
 			$linenoLB = preg_replace( "/\r|\n/", "", $line );
 			echo "[$linenoLB],\n";
