@@ -1,5 +1,7 @@
 # LiveTracking
-
+  
+Very simple Gps tracking viewer.  
+  
 In config.php:  
 Set a SecretKey and use it in logger app or http get request.  
 Set ShowOnlyLastPos to true to show only the last recorded position.  
