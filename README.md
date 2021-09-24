@@ -1,8 +1,11 @@
 # LiveTracking
 
-Set a SecretKey in config.php 
+In config.php:  
+Set a SecretKey and use it in logger app or http get request.  
+Set ShowOnlyLastPos to true to show only the last recorded position.  
   
-Use an Android app like GpsLogger or OsmAnd (or a simple HTTP Get) to send data to the server.  
+  
+Use an Android app like GpsLogger or OsmAnd (or a simple HTTP Get) to send data to the server:  
   
 OsmAnd: https://<yourserver>/tracking.php?lat={0}&lon={1}&altitude={4}&acc={3}&timestamp={2}&speed={5}&key=<Insert_Key>  
 GpsLogger: https://<yourserver>/tracking.php?lat=%LAT&lon=%LON&altitude=%ALT&speed=%SPD&timestamp=%TIMESTAMP&key=<Insert_Key>  
