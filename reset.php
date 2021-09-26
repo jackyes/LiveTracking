@@ -4,9 +4,9 @@
 	if ($key == $SecretKey){
 		$kml = fopen('./data/point.history', 'w');
 		fclose($kml);
-		echo "<b>track successfully reset</b>"
+		echo "<b>track successfully reset</b>";
 	} else {
-		echo "WRONG KEY!";		
+		echo "WRONG KEY!";
 	}
 ?>
 
