@@ -26,7 +26,7 @@ $speed = $data['speed'];
   <script>
 
   // initialize the map
-  var map = L.map('map').setView([44.07928, 10.09713], 16);
+  var map = L.map('map').setView([44.0, 10.0], 16);
   L.control.scale().addTo(map)
   // load a tile layer
 L.tileLayer( 
