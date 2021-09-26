@@ -39,7 +39,13 @@ L.tileLayer(
 	include './config.php';
 	$track = fopen('./data/point.history', 'r');
 	if ($track and $ShowOnlyLastPos == false) {
+    		$n = 0;
 		while (($line = fgets($track)) !== false) {
+			n++;
+			if ($n >= $MaxPoint) {
+        			$n = 0;
+        			break;
+      			}
 			$linenoLB = preg_replace( "/\r|\n/", "", $line );
 			echo "[$linenoLB],\n";
 		}
