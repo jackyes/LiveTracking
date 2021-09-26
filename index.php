@@ -41,7 +41,7 @@ L.tileLayer(
 	if ($track and $ShowOnlyLastPos == false) {
     		$n = 0;
 		while (($line = fgets($track)) !== false) {
-			n++;
+			$n++;
 			if ($n >= $MaxPoint) {
         			$n = 0;
         			break;
