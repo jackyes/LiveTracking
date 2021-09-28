@@ -6,6 +6,7 @@ $lon = $data['lon'];
 $tstamp = $data['timestamp'];
 $altitude = $data['altitude'];
 $speed = $data['speed'];
+$bearing = $data['bearing'];
 ?>
 
 
@@ -61,7 +62,7 @@ map.fitBounds(polyline.getBounds());
 
 <?php
 	$time = date("F j, Y, g:i a", ($tstamp / 1000) );
-	echo "L.marker([$lat,$lon]).addTo(map).bindPopup('Lat: $lat<br>Lon: $lon<br>Altitude: $altitude<br>Speed: $speed<br>Time: $time').openPopup();"
+	echo "L.marker([$lat,$lon]).addTo(map).bindPopup('Lat: $lat<br>Lon: $lon<br>Altitude: $altitude<br>Speed: $speed<br>Time: $time<br>Bearing: $bearing').openPopup();"
 ?>
 
   </script>
