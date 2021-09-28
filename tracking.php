@@ -6,6 +6,7 @@
     $data['hdop'] = $_GET['hdop'];
     $data['altitude'] = $_GET['altitude'];
     $data['speed'] = $_GET['speed'];
+    $data['bearing'] = $_GET['bearing'];
     $data['key'] = $_GET['key'];
 
     $lat = $data['lat'];
