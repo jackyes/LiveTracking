@@ -5,7 +5,7 @@ Very simple Gps tracking viewer.
 In config.php:  
 Set a SecretKey and use it in logger app or http get request.  
 Set ShowOnlyLastPos to true to show only the last recorded position.  
-  
+Set MaxPoint maxium number of point displayed on map.  
   
 Use an Android app like GpsLogger or OsmAnd (or a simple HTTP Get) to send data to the server:  
   
