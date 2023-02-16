@@ -1,4 +1,5 @@
-# LiveTracking
+# OLD. See [https://github.com/jackyes/GoLiveTracking] 
+## LiveTracking
   
 Very simple Gps tracking viewer.  
   
